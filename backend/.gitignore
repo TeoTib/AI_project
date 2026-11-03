@@ -1,0 +1,60 @@
+# ========================
+# 1. Mediul Python (Backend)
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+
+# ========================
+# 2. Date Generate / Salvari (Backend)
+# ========================
+# Evitam sa punem pe GitHub salvarile de la simulari
+backend/saved_states/
+# Evitam sa punem seturi de date masive pt NN/RL
+backend/dataset/
+*.csv
+*.sqlite3
+*.db
+
+# ========================
+# 3. Mediul Node.js (Frontend)
+# ========================
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# 4. OS Files si Editoare (VS Code / Mac / Windows)
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
