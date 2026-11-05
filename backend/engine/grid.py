@@ -1,4 +1,3 @@
-# backend/engine/grid.py
 from .rules import RuleEngine
 import copy
 
