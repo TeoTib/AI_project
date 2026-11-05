@@ -1,4 +1,3 @@
-# backend/main.py
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
@@ -26,7 +25,6 @@ def run_simulation(payload: SimulatePayload):
     try:
         grid_obj = Grid(payload.grid)
         final_grid, history = grid_obj.simulate(payload.rules, payload.steps, payload.store_intermediate)
-        # Dacă nu stocăm intermediar, returnăm doar starea curentă
         return {"grid": final_grid, "history": history if payload.store_intermediate else [final_grid]}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))

@@ -1,6 +1,3 @@
-# ========================
-# 1. Mediul Python (Backend)
-# ========================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -24,20 +21,14 @@ wheels/
 *.egg
 .pytest_cache/
 
-# ========================
-# 2. Date Generate / Salvari (Backend)
-# ========================
-# Evitam sa punem pe GitHub salvarile de la simulari
+
 backend/saved_states/
-# Evitam sa punem seturi de date masive pt NN/RL
 backend/dataset/
 *.csv
 *.sqlite3
 *.db
 
-# ========================
-# 3. Mediul Node.js (Frontend)
-# ========================
+
 node_modules/
 dist/
 dist-ssr/
@@ -46,9 +37,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# ========================
-# 4. OS Files si Editoare (VS Code / Mac / Windows)
-# ========================
+
 .vscode/
 .idea/
 *.suo

@@ -6,18 +6,15 @@ class RuleEngine:
         transitions = rules_def.get("transitions", [])
         
         for trans in transitions:
-            # Sărim dacă regula nu se aplică stării curente
             if trans["from"] != cell_state:
                 continue
                 
             match = True
-            
-            # Verificăm condiția de probabilitate (dacă există)
+      
             if "probability" in trans:
                 if random.random() >= trans["probability"]:
                     match = False
-            
-            # Verificăm starea vecinilor (dacă există)
+         
             if match and "neighbor_state" in trans:
                 n_state = trans["neighbor_state"]
                 n_count = neighbors_counts.get(str(n_state)) or neighbors_counts.get(n_state, 0)

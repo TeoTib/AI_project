@@ -1,4 +1,3 @@
-// frontend/src/App.jsx
 import React, { useState, useEffect, useRef } from 'react';
 
 const PRESETS = {
@@ -30,7 +29,6 @@ export default function App() {
   const [history, setHistory] = useState([]);
   const [rules, setRules] = useState(JSON.stringify(PRESETS.BriansBrain, null, 2));
   
-  // Parametri noi
   const [steps, setSteps] = useState(1);
   const [storeIntermediate, setStoreIntermediate] = useState(true);
   const [savedFiles, setSavedFiles] = useState([]);
